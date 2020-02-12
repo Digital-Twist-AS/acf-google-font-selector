@@ -11,6 +11,12 @@
  *
  */
 
+function cl_acf_set_language() {
+    if ( function_exists('acf_get_setting') ) {
+        return acf_get_setting('default_language');
+    }
+}
+
 
  /**
   * Get Fonts To Enqueue
